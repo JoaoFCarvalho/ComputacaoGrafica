@@ -42,9 +42,9 @@ while not glfw.window_should_close(window):
     if glfw.get_key(window, glfw.KEY_DOWN) == glfw.PRESS:
         y_pos -= speed
 
-    if glfw.get_key(window, glfw.KEY_Z) == glfw.PRESS:
+    if glfw.get_key(window, glfw.KEY_A) == glfw.PRESS:
         scale += scale_speed
-    if glfw.get_key(window, glfw.KEY_X) == glfw.PRESS:
+    if glfw.get_key(window, glfw.KEY_D) == glfw.PRESS:
         scale = max(0.1, scale - scale_speed)
 
     glClearColor(0.1, 0.1, 0.1, 1.0)
